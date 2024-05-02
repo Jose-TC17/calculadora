@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="body dark" id="body">
+    <h1 class="title dark">Calculadora</h1>
+    <div class="container-theme">
+        <label class="text-theme dark">Tema:</label>
+        <div class="type-theme">
+            <div class="circle dark"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-calculator dark">
+            <form name="calculator" id="form">
+                <input type="text" value="" name="operation" autocomplete="off" readonly id="text" class="result-operator">
+                <br>
+                <input type="reset" value="AC" class="button buttons dark ac">
+                <input type="button" value="(" id="par" class="button buttons operator dark">
+                <input type="button" value="%" class="button buttons operator dark">
+                <input type="button" value="◀" id="delete" class="buttons del">
+                <br>
+                <input type="button" value="7" class="button buttons numbers dark">
+                <input type="button" value="8" class="button buttons numbers dark">
+                <input type="button" value="9" class="button buttons numbers dark">
+                <input type="button" value="+" class="button buttons operator dark">
+                <br>
+                <input type="button" value="4" class="button buttons numbers dark">
+                <input type="button" value="5" class="button buttons numbers dark">
+                <input type="button" value="6" class="button buttons numbers dark">
+                <input type="button" value="-" class="button buttons operator dark">
+                <br>
+                <input type="button" value="1" class="button buttons numbers dark">
+                <input type="button" value="2" class="button buttons numbers dark">
+                <input type="button" value="3" class="button buttons numbers dark">
+                <input type="button" value="x" id="mul" class="button buttons operator dark">
+                <br>
+                <input type="button" value="0" class="button buttons numbers dark">
+                <input type="button" value="." class="button buttons operator dark">
+                <input type="button" value="÷" class="button buttons operator dark">
+                <input type="button" value="=" id="igl" class="buttons igl">
+            </form>
+        </div>
+        <div class="history dark">
+            <label>Historial de resultados</label>
+            <div class="content-history dark">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Hora</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="content-history" class="tbody dark">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+    
+    <p id="message" class="message"></p>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
